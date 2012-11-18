@@ -472,10 +472,11 @@ public class ToolpathGeneratorFactory {
 		};
 		
 		
-		if((new MiracleGrueBeta()).getDefaultMiracleGrueDir().exists());
+		if((new MiracleGrueBeta()).getDefaultMiracleGrueDir().exists())
       // We are disabling MiracleGrue in ReplicatorG so as not to confuse people : use Makerware
-			//list.add(new ToolpathGeneratorDescriptor(MiracleGrueBeta.displayName, 
-		  //	"This is the latest version of MiracleGrue.", MiracleGrueBeta.class));
+      // eff that noise. re-enabling this...I fight for the users. #technophobe
+      list.add(new ToolpathGeneratorDescriptor(MiracleGrueBeta.displayName, 
+        "This is the latest version of MiracleGrue.", MiracleGrueBeta.class));
 		if((new Slic3r071()).getDefaultSlic3rDir().exists())
 			list.add(new ToolpathGeneratorDescriptor(Slic3r071.displayName, 
 				"This is the latest version of Slic3r.", Slic3r071.class));
